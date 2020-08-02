@@ -5,3 +5,14 @@ $(document).on('click','.jump',function(event){
     scrollTop: $(target).offset().top
   },500);
 });
+
+var f=false;
+$(".topcircle").click(function(){
+  if(f=!f){
+    $('.topcircle').css("background-color","#f24");
+    $('.block').show(300);
+  }else{
+    $('.topcircle').css("background-color","#62b6cb");
+    $('.block').hide(300)
+  }
+});

@@ -10,6 +10,7 @@
 html, body {
   margin: 0;
   background-color: #001233;
+  overflow-x: hidden;
 }
 
 .wrapper1 {
@@ -24,55 +25,51 @@ html, body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: fixed;
-  right: 30px;
+  right: 50px;
   top: 5%;
   z-index: 1000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#cae9ff), color-stop(#62b6cb), to(#1b4965));
-  background: linear-gradient(#cae9ff, #62b6cb, #1b4965);
+  background-color: #62b6cb;
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
-  opacity: 0.5;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  opacity: 0.8;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
 }
 .topcircle:hover {
   opacity: 1;
-  background: linear-gradient(60deg, #a6173b, #f07698, #cae9ff);
 }
-.topcircle ul {
-  list-style: none;
-  line-height: 30px;
-  -webkit-transform: translate(-70px, 75px);
-          transform: translate(-70px, 75px);
-  text-align: right;
+
+.block {
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+  position: absolute;
+  left: -40px;
+  top: 50px;
   display: none;
-  -webkit-transition: 1s;
-  transition: 1s;
+}
+.block a.jump {
+  text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  opacity: 0.5;
-}
-.topcircle ul:hover {
-  opacity: 1;
-}
-.topcircle ul a {
-  text-decoration: none;
-}
-.topcircle ul a:hover {
-  color: white;
-}
-
-input:checked + .topcircle ul {
+  color: #001233;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 20px;
+  background-color: #fff;
+  font-weight: 700;
   display: block;
 }
-
-input {
-  display: none;
+.block a.jump:hover {
+  color: #f24;
 }
 
 .main {
@@ -167,7 +164,7 @@ input {
   left: 20px;
   top: 195px;
   border: solid 2px #fff;
-  background-color: #577399;
+  background-color: #FCB5CB;
 }
 .main .trace3 {
   width: 200px;
@@ -179,13 +176,13 @@ input {
           animation: rotate1 90s infinite;
 }
 .main .trace3 .planet3 {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: absolute;
   left: 152px;
-  top: 162px;
-  background-color: #fff;
+  top: 165px;
+  background-color: #eee;
 }
 .main .jellyfish {
   width: 150px;
@@ -367,18 +364,23 @@ html, body {
 }
 .icontrace .head .fa-github {
   position: absolute;
-  left: 40px;
+  left: 20px;
+  top: 220px;
+}
+.icontrace .head .fa-codepen {
+  position: absolute;
+  left: 60px;
   top: 220px;
 }
 .icontrace .head .fa-facebook {
   position: absolute;
-  left: 80px;
+  left: 100px;
   top: 220px;
 }
 .icontrace .title2 {
   width: 200px;
   position: relative;
-  top: 100%;
+  top: 105%;
   padding: 10px 0;
   text-align: center;
   border-top: solid 1px;
@@ -721,15 +723,13 @@ h6 {
 
 .col-sm-6 {
   margin: 20px 0;
-  border-top: 1px solid rgba(238, 238, 238, 0.8);
-  border-bottom: 1px solid rgba(238, 238, 238, 0.8);
   padding: 20px 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 @media screen and (max-width: 575px) {
   .col-sm-6 {
-    border-top: none;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.8);
     border-radius: 20px;
     margin: 5px 0;
   }
@@ -771,4 +771,27 @@ a.check {
 .check:hover {
   background-color: #fff;
   color: #001233;
+}
+
+.container2 .col-sm-12 {
+  font-size: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.container2 .col-sm-12 a.jump {
+  background-color: rgba(98, 182, 203, 0.2);
+  color: #eee;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.container2 .col-sm-12 a.jump:hover {
+  background-color: #eee;
+  color: #001233;
+}
+.container2 .col-sm-12 .right {
+  font-size: 10px;
+  margin-top: 50px;
 }
