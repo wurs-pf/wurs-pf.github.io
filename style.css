@@ -404,7 +404,7 @@ html, body {
 }
 .container1 .english {
   letter-spacing: 1px;
-  text-indent: 0.5em;
+  text-indent: 0.2em;
 }
 
 .bottomplanet {
@@ -728,7 +728,7 @@ h6 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .col-md-6 {
     border-bottom: 1px solid rgba(238, 238, 238, 0.8);
     border-radius: 20px;
