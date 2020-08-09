@@ -606,13 +606,13 @@ html h3, body h3 {
   background-color: #f24;
 }
 .skillstable .skillbar-bar .valuebar.p3 {
-  width: 110px;
+  width: 60px;
   height: 10px;
   border-radius: 5px 0 0 5px;
   background-color: #f24;
 }
 .skillstable .skillbar-bar .valuebar.p4 {
-  width: 30px;
+  width: 40px;
   height: 10px;
   border-radius: 5px 0 0 5px;
   background-color: #f24;
