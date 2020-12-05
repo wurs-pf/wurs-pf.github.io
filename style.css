@@ -372,7 +372,7 @@ html, body {
   left: 60px;
   top: 220px;
 }
-.icontrace .head .fa-facebook {
+.icontrace .head .fa-palette {
   position: absolute;
   left: 100px;
   top: 220px;
@@ -402,7 +402,7 @@ html, body {
 .container1 .japanese {
   text-indent: 1em;
 }
-.container1 .english {
+.container1 .chinese {
   letter-spacing: 1px;
   text-indent: 0.2em;
 }
@@ -606,7 +606,7 @@ html h3, body h3 {
   background-color: #f24;
 }
 .skillstable .skillbar-bar .valuebar.p3 {
-  width: 40px;
+  width: 60px;
   height: 10px;
   border-radius: 5px 0 0 5px;
   background-color: #f24;
